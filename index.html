@@ -60,6 +60,17 @@
     </style>
 </head>
 <body>
+    <style>
+        /* Hide Spline on mobile to prevent freezing */
+        @media (max-width: 768px) {
+            #spline-container iframe {
+                display: none;
+            }
+            #spline-container {
+                background: url('https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg') center/cover no-repeat;
+            }
+        }
+    </style>
     <div id="spline-container">
         <iframe src="https://my.spline.design/interactiveaistartupheropage-YaKnQLzSn5lKiXHYLeFCIntt/" frameborder="0" allowfullscreen></iframe>
     </div>
